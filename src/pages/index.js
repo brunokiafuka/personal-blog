@@ -16,7 +16,7 @@ export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Bruno Kiafuka Dev Blog" />
       <BlogContainer>
         {posts
           .filter(post => post.node.frontmatter.title.length > 0)

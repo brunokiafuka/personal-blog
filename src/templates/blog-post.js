@@ -10,7 +10,10 @@ export default function Template({ data }) {
   const { markdownRemark: post } = data
   return (
     <Layout>
-      <SEO title={post.frontmatter.title} />
+      <SEO
+        title="Bruno Kiafuka Dev Blog"
+        description={post.frontmatter.title}
+      />
       <Container>
         <div className="blog-post">
           <Date>{post.frontmatter.date}</Date>
