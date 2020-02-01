@@ -1,21 +1,67 @@
 import React from "react"
-import { Link } from "gatsby"
-
+import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+// import '../css/index.css'; // add some style if you want!
+import {
+  PostCard,
+  PostTitle,
+  Date,
+  Excerpt,
+  BlogContainer,
+  Tags,
+} from "./styles"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+export default function Index({ data }) {
+  const { edges: posts } = data.allMarkdownRemark
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <BlogContainer>
+        {posts
+          .filter(post => post.node.frontmatter.title.length > 0)
+          .map(({ node: post }) => {
+            return (
+              <PostCard key={post.id}>
+                <Link
+                  style={{ textDecoration: "none" }}
+                  to={post.frontmatter.path}
+                >
+                  <div>
+                    <Date>{post.frontmatter.date}</Date>
+                  </div>
+                  <PostTitle>
+                    <span role="img">📚</span>
+                    {post.frontmatter.title}
+                  </PostTitle>
+                  <Excerpt>{post.excerpt}</Excerpt>
+                  {post.frontmatter.tags.map(tag => (
+                    <Tags key={tag}>{tag}</Tags>
+                  ))}
+                </Link>
+              </PostCard>
+            )
+          })}
+      </BlogContainer>
+    </Layout>
+  )
+}
 
-export default IndexPage
+export const pageQuery = graphql`
+  query IndexQuery {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          excerpt(pruneLength: 250)
+          id
+          frontmatter {
+            title
+            date(formatString: "MMMM DD, YYYY")
+            path
+            tags
+          }
+        }
+      }
+    }
+  }
+`

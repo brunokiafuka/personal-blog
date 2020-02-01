@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { GitHub, Twitter, Linkedin } from "react-feather"
 
 import Header from "./header"
 import "./layout.css"
@@ -18,6 +19,7 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          avatar
         }
       }
     }
@@ -25,19 +27,60 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header
+        avatar={data.site.siteMetadata.avatar}
+        siteTitle={data.site.siteMetadata.title}
+      />
       <div
         style={{
           margin: `0 auto`,
           maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          padding: `1.0875rem 1.45rem`,
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <footer
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            flexDirection: "column",
+          }}
+        >
+          <p
+            style={{
+              color: "#999",
+              fontFamily: "Poppins",
+              fontSize: 12,
+              marginBottom: 0,
+            }}
+          >
+            {`© ${new Date().getFullYear()}`} built <span role="img">❤️</span>
+            with by <strong>Bruno Kiafuka</strong>
+          </p>
+          <div>
+            <a
+              style={{ margin: 10, color: "#999" }}
+              target="_blank"
+              href="https://github.com/brunokiafuka"
+            >
+              <GitHub size={20} />
+            </a>
+            <a
+              style={{ margin: 10, color: "#999" }}
+              target="_blank"
+              href="https://www.linkedin.com/in/bruno-kiafuka-609132101/"
+            >
+              <Twitter size={20} />
+            </a>
+            <a
+              style={{ margin: 10, color: "#999" }}
+              target="_blank"
+              href="https://twitter.com/bruno_kiafuka"
+            >
+              <Linkedin size={20} />
+            </a>
+          </div>
         </footer>
       </div>
     </>
