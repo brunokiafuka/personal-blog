@@ -69,14 +69,14 @@ const Layout = ({ children }) => {
             <a
               style={{ margin: 10, color: "#999" }}
               target="_blank"
-              href="https://www.linkedin.com/in/bruno-kiafuka-609132101/"
+              href="https://twitter.com/bruno_kiafuka"
             >
               <Twitter size={20} />
             </a>
             <a
               style={{ margin: 10, color: "#999" }}
               target="_blank"
-              href="https://twitter.com/bruno_kiafuka"
+              href="https://www.linkedin.com/in/bruno-kiafuka-609132101/"
             >
               <Linkedin size={20} />
             </a>
