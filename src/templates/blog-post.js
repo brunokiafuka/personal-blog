@@ -1,13 +1,15 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import { DiscussionEmbed } from "disqus-react"
 // import '../css/blog-post.css';
-import { Container, PostTitle, Divider, Tags, Date } from "./styles"
+import { Container, PostTitle, Divider, Tags, Date, PostsNav } from "./styles"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-export default function Template({ data }) {
+export default function Template({ data, pageContext }) {
   const { markdownRemark: post } = data
+
+  const { next, prev } = pageContext
 
   const disqusConfig = {
     shortname: process.env.GATSBY_DISQUS_NAME,
@@ -38,7 +40,31 @@ export default function Template({ data }) {
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
         </div>
-
+        <Divider />
+        <PostsNav
+          style={{
+            display: `flex`,
+            flexWrap: `wrap`,
+            justifyContent: `space-between`,
+            listStyle: `none`,
+            padding: 0,
+          }}
+        >
+          <li>
+            {prev && (
+              <Link to={prev.frontmatter.path} rel="prev">
+                {`⬅️ ${prev.frontmatter.title}`}
+              </Link>
+            )}
+          </li>
+          <li>
+            {next && (
+              <Link to={next.frontmatter.path} rel="next">
+                {`${next.frontmatter.title} ➡️`}
+              </Link>
+            )}
+          </li>
+        </PostsNav>
         <DiscussionEmbed {...disqusConfig} />
       </Container>
     </Layout>
