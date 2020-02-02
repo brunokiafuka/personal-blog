@@ -62,6 +62,7 @@ const Layout = ({ children }) => {
             <a
               style={{ margin: 10, color: "#999" }}
               target="_blank"
+              rel="noopener noreferrer"
               href="https://github.com/brunokiafuka"
             >
               <GitHub size={20} />
@@ -69,6 +70,7 @@ const Layout = ({ children }) => {
             <a
               style={{ margin: 10, color: "#999" }}
               target="_blank"
+              rel="noopener noreferrer"
               href="https://twitter.com/bruno_kiafuka"
             >
               <Twitter size={20} />
@@ -76,6 +78,7 @@ const Layout = ({ children }) => {
             <a
               style={{ margin: 10, color: "#999" }}
               target="_blank"
+              rel="noopener noreferrer"
               href="https://www.linkedin.com/in/bruno-kiafuka-609132101/"
             >
               <Linkedin size={20} />

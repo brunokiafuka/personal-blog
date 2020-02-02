@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-
+import { DiscussionEmbed } from "disqus-react"
 // import '../css/blog-post.css';
 import { Container, PostTitle, Divider, Tags, Date } from "./styles"
 import Layout from "../components/layout"
@@ -8,6 +8,15 @@ import SEO from "../components/seo"
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data
+
+  const disqusConfig = {
+    shortname: process.env.GATSBY_DISQUS_NAME,
+    config: {
+      identifier: post.frontmatter.path,
+      title: post.frontmatter.title,
+    },
+  }
+
   return (
     <Layout>
       <SEO
@@ -29,6 +38,8 @@ export default function Template({ data }) {
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
         </div>
+
+        <DiscussionEmbed {...disqusConfig} />
       </Container>
     </Layout>
   )
