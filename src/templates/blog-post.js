@@ -21,10 +21,7 @@ export default function Template({ data, pageContext }) {
 
   return (
     <Layout>
-      <SEO
-        title="Bruno Kiafuka Dev Blog"
-        description={post.frontmatter.title}
-      />
+      <SEO title="Kiafuka.dev" description={post.frontmatter.title} />
       <Container>
         <div className="blog-post">
           <Date>{post.frontmatter.date}</Date>
