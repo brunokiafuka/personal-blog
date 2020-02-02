@@ -1,6 +1,6 @@
 ---
 path: "/o-que-e-necessario-para-aprender-a-programar"
-date: 2020-02-01T17:12:33.962Z
+date: 2020-02-01
 title: "O que é necessário para aprender a programar 🤯?"
 tags: ["beginners", "human-friendly"]
 ---
