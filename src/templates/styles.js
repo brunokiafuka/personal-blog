@@ -32,3 +32,18 @@ export const Date = styled.span`
   color: #999;
   font-size: 12px;
 `
+
+export const PostsNav = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin-left: 0;
+  li > a {
+    color: #1f567a;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Poppins;
+  }
+`

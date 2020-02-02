@@ -23,6 +23,9 @@ export default function Index({ data }) {
           .map(({ node: post }) => {
             return (
               <PostCard key={post.id}>
+                {post.frontmatter.tags.map(tag => (
+                  <Tags key={tag}>{tag}</Tags>
+                ))}
                 <Link
                   style={{ textDecoration: "none" }}
                   to={post.frontmatter.path}
@@ -35,9 +38,6 @@ export default function Index({ data }) {
                     {post.frontmatter.title}
                   </PostTitle>
                   <Excerpt>{post.excerpt}</Excerpt>
-                  {post.frontmatter.tags.map(tag => (
-                    <Tags key={tag}>{tag}</Tags>
-                  ))}
                 </Link>
               </PostCard>
             )
