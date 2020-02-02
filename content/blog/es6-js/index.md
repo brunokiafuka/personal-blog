@@ -13,7 +13,7 @@ Em 2015, a linguagem sofreu uma "super" evolução com a aprovação do **ECMASc
 
 ##### 1. Const e Let
 
-Estamos acostumados a usar o `var` quando declaramos as nossas variáveis no Javacript, usamos está **keyword** para definir variáveis que são mutavais e constantes.
+Estamos acostumados a usar o `var` quando declaramos as nossas variáveis no Javacript, usamos está **keyword** para definir variáveis mutavais e constantes.
 
 - **const**: usamos o const para variáveis que não são mutaveis durante a execução da nossa script.
 
@@ -64,7 +64,7 @@ const multiplyNumByTwo = function(params) {
 multiplyNumByTwo(4) // 8
 ```
 
-Com a introdução das arrow functions a mesma função pode ser escrita da seguinte maneira:
+Com a introdução das arrow functions a mesma função pode ser escrita da seguinte forma:
 
 ```javascript
 const multiplyNumByTwo = params => {
@@ -120,7 +120,7 @@ console.log(age) // 23
 console.log(superPower) // "Writing code"
 ```
 
-Como podemos ver no exemplo acima mostra-se muito verboso, usando o conceito de object destructuring, podemos ter um exemplo mais simples:
+Como podemos ver o exemplo acima mostra-se muito verboso, usando o conceito de object destructuring, podemos ter um exemplo mais simples:
 
 ```javascript
 const person = { name: "Bruno", age: 23, superPower: "writing code" }
