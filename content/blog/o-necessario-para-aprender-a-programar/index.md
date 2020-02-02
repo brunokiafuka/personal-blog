@@ -79,4 +79,4 @@ Após aprendermos a programar poderemos desenvolver diversas soluções para os 
 
 Programação pode se tornar um bicho de sete cabeças de quando em vez especialmente quando não estamos fazendo por vontade própria, mas também pode e deve ser divertido quando o fazemos com força de vontade. Os pontos abordados neste blog ajudaram-me no processo de aprendizado e até hoje uso-os como um ponto de referência no desenvolvimento das minhas soluções.
 
-> "Aprender a programar pode ser meio frustrante no começo mas vale apena o sacrifício". **#Coding is fun :)**
+> "Aprender a programar pode ser meio frustrante no começo mas vale apena o sacrifício". **#CodingIsFun🚀**
