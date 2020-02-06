@@ -55,8 +55,8 @@ const Layout = ({ children }) => {
               marginBottom: 0,
             }}
           >
-            {`© ${new Date().getFullYear()}`} built <span role="img">❤️</span>
-            with by <strong>Bruno Kiafuka</strong>
+            {`© ${new Date().getFullYear()}`} built with{" "}
+            <span role="img">❤️</span> by <strong>Bruno Kiafuka</strong>
           </p>
           <div>
             <a
