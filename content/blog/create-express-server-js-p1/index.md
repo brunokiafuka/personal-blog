@@ -5,11 +5,13 @@ title: "Building an RESTFull server in JS - PART 1"
 tags: ["intermediate", "javascript", "typescript"]
 ---
 
+_by: @bruno_kiafuka_
+
 > Representational State Transfer: is what an API that uses http requests to manipulate data. REST technology is generally preferred to the more robust Simple Object Access Protocol (SOAP) technology because REST leverages less bandwidth, making it more suitable for internet usage.
 
 #### Creating a new project
 
-- Install <a href="https://yarnpkg.com/getting-started/install" target="_blank">yarn</a>()
+- Install <a href="https://yarnpkg.com/getting-started/install" target="_blank">yarn</a>
 - open your terminal
 - run `mkdir <Name of your project>`
 - cd `cd <Name of your project>`
