@@ -2,7 +2,7 @@
 path: "/build-express-server-1"
 date: 2020-03-20
 title: "Building an RESTFull server in JS - PART 1"
-tags: ["intermediate", "javascript", "typescript"]
+tags: ["intermediate", "javascript", "api"]
 ---
 
 > Representational State Transfer: is what an API that uses http requests to manipulate data. REST technology is generally preferred to the more robust Simple Object Access Protocol (SOAP) technology because REST leverages less bandwidth, making it more suitable for internet usage.
