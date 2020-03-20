@@ -1,82 +1,80 @@
 ---
-path: "/o-que-e-necessario-para-aprender-a-programar"
+path: "/what-it-takes-to-learn-to-programming"
 date: 2020-02-01
-title: "O que é necessário para aprender a programar 🤯?"
+title: "What it takes to learn to how to program?"
 tags: ["beginners", "human-friendly"]
 ---
 
-Muitas vezes sou questionado por diversas pessoas que aspiram estudar ou começar uma carreira em programação de softwares (ou simplesmente programação), querendo saber qual é a complexidade no aprendizado e quais os skills necessários para singrar na carreira. Pessoalmente acho que não exista uma fórmula para aprender, mas sim alguns principios e skills que devem sem adquiridos por qualquer pessoa que deseja tornar-se um programador.
-Neste artigo, estarei partilhando alguns principios e skills que devemos desenvolver durante o processo de aprendizado da programação.
+I am often questioned by several people who aspire to study or start a career in software programming (or simply programming), wanting to know what is the complexity in learning and what skills are needed to succeed in the career. Personally I think that there is no formula to learn, but some principles and skills that should be acquired by anyone who wants to become a programmer. In this post, I will be sharing some principles and skills that we must develop during the programming learning process.
 
-#### O que é programação de softwares afinal?
+#### What is software programming anyway?
 
-Quando pesquisamos por "programação de softwares" no google recebemos cerca de 28.500.000 resultados com diferentes abordagens e definições. Muita das vezes estes conteúdos são muito técnicas, ou apresentam uma linguagem muito complexa, que fazem com que os aspirantes a programadores fiquem confusos.
+When we searched for "software programming" on google we received about 28,500,000 results with different approaches and definitions. These contents are often very technical, or have a very complex language, which makes aspiring programmers confused.
 
-Sempre que fosse questionado o que é programação, a minha resposta era similar a de muitos blogs ou até mesmo a da wikipedia.
+Whenever I was asked what programming is, my answer was similar to that of many blogs or even that of wikipedia.
 
-> Hoje, eu defino programação como um processo de escrita de instruções que devem ser executadas por um computador.
+> Today, I define programming as a process of writing instructions that must be executed by a computer.
 
-#### O que é necessário para aprender a programar?
+#### What does it take to learn to program?
 
-Existem várias maneiras para aprendermos a “programar”, muitos de nós aprendemos porque acabamos por ter a programação como modúlo durante a nossa formação ou por mera curiosidade. Os pontos abaixo contêm aspectos que pessoalmente acho serem necessários para qualquer pessoa desejando começar com a programação:
+There are several ways to learn to “program”, many of us learn because we end up having programming as a model during our training or out of curiosity. The points below contain aspects that I personally think are necessary for anyone wishing to start with programming:
 
-- **Ter habilidade de resolver problemas** — Quando estamos desenvolvendo um programa na verdade, estamos escrevendo instruções de como o computador deve solucionar um dado problema. Todo programador deve ser um bom "problem solver", devemos desenvolver a capacidade de fazer analise a fim de dar solução a qualquer problema definindo uma série de interações necessárias para a resolução de dado problema.
-- **Saiba como criar algoritmos** — “Os algoritmos aplicam-se em todas as áreas da nossa vida.” — Um algoritmo é simplesmente uma sequencia finita de passos para resolver um problema (lembra da definição de programação). Saber desenvolver algoritmos nos ajudará a saber como devemos estruturar as nossas soluções. Algoritmos são muito importantes pois eles nos ajudam a entender o que é necessário para solucionarmos um dado problema.
-
-```
-//Exemplo de um Algoritmo para um programa
-//que calcula o a média de um aluno após entrar 3 notas
-1. Começar o programa;
-2. Ler as três (3) notas inseridas pelo usúario;
-3. Somar as notas e dividir o resultado da soma pelo número de notas
-4. Caso o resultado da divisão for maior ou igual à 50
-   4.1. Informar ao usúario que o aluno foi aprovado
-5. Caso o resultado for menor do que 50
-   5.1. Informar ao usúario que o aluno foi reprovado
-6. Terminar o programa
-```
-
-- **Aprenda a escrever pseudocódigo** — O pseudocódigo é um metódo usado para escrever de forma informal um algortimo, utilizando uma linguagem simples sem necessariamente seguir ou usar a sintaxe de uma linguagem de programação.
+- **Have the ability to solve problems** - When we are actually developing a program, we are writing instructions on how the computer should solve a given problem. Every programmer must be a good "problem solver", we must develop the ability to do analysis in order to solve any problem by defining a series of interactions necessary to solve a given problem.
+- **Learn how to create algorithms** - “Algorithms apply in all areas of our life.” - An algorithm is simply a finite sequence of steps to solve a problem (remember the definition of programming). Knowing how to develop algorithms will help us to know how we should structure our solutions. Algorithms are very important because they help us to understand what is necessary to solve a given problem.
 
 ```
-//Pseudocodigo do Algoritmo acima ...
-Variaveis
-   media, nota1, nota2, nota3
-Inicio
-  leia nota1, nota2 e nota3
-  media = (nota1+nota2+nota3)/3
-  Se (media >= 50)
-     entao escreva “aluno aprovado”
-  Senao
-     escreva “aluno reprovado”
-  Fim
-Fim
+// Example of an Algorithm for a program
+// which calculates a student's average after entering 3 grades
+1. Start the program;
+2. Read the three (3) notes inserted by the user;
+3. Add the notes and divide the sum result by the number of notes
+4. If the result of the division is greater than or equal to 50
+    4.1. Inform the user that the student has been approved
+5. If the result is less than 50
+    5.1. Inform the user that the student has failed
+6. End the program
 ```
 
-- **Aprenda e domine no mínimo uma linguagem de programação** — Após aprender ou aspectos acima citados eu o aconselharia a aprender e dominar no minimo uma linguagem de programação. **Linguagem de programação** é o método formal para dizermos ao computador como executar as nossas instruções (nossos algoritmos) — todos os dias tem uma nova linguagem sendo criada, todas elas partilham o mesmo conceito mas apresentam uma sintaxe diferente. Dentro delas existem algumas são consideradas as mais faceis de se aprender, particularmente aconselho comecar com as seguintes linguagens: Python, C, C++, Java, C#, PHP e Javascript.
-
-> As linguagens estão listadas de forma aliatória.
+- **Learn to write pseudocode** - Pseudocode is a method used to informally write an algorithm, using a simple language without necessarily following or using the syntax of a programming language.
 
 ```
-//Exemplo em Python do nosso Pseudocodigo
-nota1 = int(input("Insira a primeira nota: "))
-nota2 = int(input("Insira a segunda nota: "))
-nota3 = int(input("Insira a terceira nota: "))
-media = (nota1 + nota2 + nota3) / 3
-if(media >= 50):
-  print("aluno aprovado")
+// Pseudocodigo from the Algorithm above ...
+Variables
+    average, note1, note2, note3
+Start
+   read note1, note2 and note3
+   media = (grade1 + grade2 + grade3) / 3
+   If (average> = 50)
+      then write “approved student”
+   If not
+      write “failed student”
+   End
+End
+```
+
+- **Learn and master at least one programming language** - After learning or aspects mentioned above I would advise you to learn and master at least one programming language. **Programming language** is the formal method for telling the computer how to execute our instructions (our algorithms) - every day a new language is being created, they all share the same concept but have a different syntax. Within them there are some that are considered the easiest to learn, particularly I recommend starting with the following languages: Python, C, C ++, Java, C #, PHP and Javascript.
+
+> Languages are listed randomly.
+
+```
+// Python example of our Pseudocodigo
+nota1 = int (input ("Insert the first note:"))
+nota2 = int (input ("Insert the second note:"))
+nota3 = int (input ("Insert the third note:"))
+media = (grade1 + grade2 + grade3) / 3
+if (media> = 50):
+   print ("approved student")
 else:
-  print("aluno reprovado")
+   print ("failed student")
 ```
 
-- **Habilidade de pesquisa** — um programador (seja estudante ou até mesmo já exercendo a profissão) deve desenvolver o hábito de pesquisa. Muito do conteúdo exposto online (video aulas, blog posts, e etc…) ajudam-nos bastante no processo de aprendizado e/ou de desenvolvimento da carreira, visto que estaremos aprendendo com outras pessoas que têm mais experiência na nossa área de estudo.
-- **Tenha domínio da língua Inglesa** — se fizermos uma analise lógica, posso afirmar que 99% das linguagens de programação existentes herdaram alguns elementos da gramática Inglesa. De igual modo, os documentos oficiais são sempre escritos primeiro em Inglês e depois traduzido noutras linguas caso seja necessário.
-- **Dedicação e força de vontade** — Os aspectos acima citados são bastante importantes numa vertente mais técnica e academica, a dedicação e força de vontade tem uma aplicação muito pessoal. Muita das vezes por falta de dedicação acabamos por não por em prática aquilo que nos é ensinado ignorando o conteudo que temos em nossa posse, não só em programação mas como em toda outra área de estudo devemos ser perseverantes e investir o nosso tempo a melhorar as nossas habilitações.
+- **Research ability** - a programmer (whether a student or even already practicing the profession) must develop the research habit. Much of the content exposed online (video lessons, blog posts, etc.) helps us a lot in the process of learning and/or career development, since we will be learning from other people who have more experience in our area of study.
+- **Dedication and willpower** - The aspects mentioned above are very important in a more technical and academic aspect, dedication and willpower has a very personal application. Many times due to lack of dedication we end up not putting into practice what is taught to us, ignoring the content we have in our possession, not only in programming but as in every other area of study, we must be persevering and invest our time in improving our qualifications.
 
-#### Conclusão
+#### Conclusion
 
-Após aprendermos a programar poderemos desenvolver diversas soluções para os mais variados problemas. Estaremos hábilitados para criar aplicativos para computadores, aplicativos para móveis, aplicativos para smart TVs, etc… Mas para tudo isso seja possível é necessário muita dedicação e disciplina.
+After learning how to program we can develop several solutions for the most varied problems. We will be able to create applications for computers, applications for furniture, applications for smart TVs, etc ... But for all this to be possible, a lot of dedication and discipline is necessary.
 
-Programação pode se tornar um bicho de sete cabeças de quando em vez especialmente quando não estamos fazendo por vontade própria, mas também pode e deve ser divertido quando o fazemos com força de vontade. Os pontos abordados neste blog ajudaram-me no processo de aprendizado e até hoje uso-os como um ponto de referência no desenvolvimento das minhas soluções.
+Programming can become a seven-headed bug from time to time especially when we are not doing it willingly, but it can and should be fun when we do it with willpower. The points covered in this blog helped me in the learning process and even today I use them as a reference point in the development of my solutions.
 
-> "Aprender a programar pode ser meio frustrante no começo mas vale apena o sacrifício". **#CodingIsFun🚀**
+> "Learning to program can be a little frustrating at first, but it's worth the sacrifice ". **#CodingIsFun🚀**
